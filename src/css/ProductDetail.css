@@ -1,0 +1,172 @@
+.product-modal-background{
+  width: 100vw;
+  height:100vh;
+  background-color: rgba(0,0,0,0.9);
+  position: fixed;
+  top:0px;
+  left:0px;
+  z-index: 100000;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Product-outer-modal{
+  border-radius: 7px;
+  width: 60vw;
+  position: absolute;
+  left:20vw;
+  top:30vh;
+}
+
+.product-modal-container{
+  position: absolute;
+  top:8%;
+  width: 60vw;
+  height: 45vh;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 7px;
+}
+
+.product-profile{
+  flex: 45;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-description{
+  flex:55;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-profile-picture{
+  /*border: 1px black solid;*/
+  flex:70;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 5%;
+  overflow: hidden;
+  overflow: hidden;
+}
+
+.product-profile-picture img{
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.product-profile-user{
+  flex: 30;
+  /*border:1px solid black;*/
+  display: flex;
+  flex-direction: row;
+  /*justify-content: center;*/
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.product-profile-user-desciption p{
+  font-size: 18px;
+  color: #3498db;
+}
+
+.product-profile-user-avatar{
+
+}
+
+.product-profile-user-avatar-img{
+
+  max-width: 4vw;
+}
+
+.product-profile-user-desciption{
+
+}
+
+.product-description-title{
+  flex:15;
+  /*border: 1px solid black;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 7%;
+  padding-right: 7%;
+
+}
+
+.product-description-title-name{
+  font-size: 26px;
+}
+
+.product-description-title-price{
+  font-size: 26px;
+}
+
+.product-description-detail{
+  flex:53;
+  /*border: 1px solid black;*/
+  overflow: scroll;
+}
+
+.product-description-buttons{
+  flex:30;
+  /*border: 1px solid black;*/
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+}
+
+.product-description-buttons button{
+  background-color: white;
+  border : solid #3498db 1px;
+  border-radius: 15px;
+  outline: 0px;
+  width: 8vw;
+}
+
+.product-description-buttons button:hover{
+  background-color: #3498db;
+  border: 0px;
+  color: white;
+  transition: background-color 1s;
+}
+
+.product-description-buttons-contact{
+  margin-left: 6%;
+}
+
+.product-description-buttons-add{
+  margin-right: 6%;
+}
+
+.product-description-detail p{
+  font-size: 20px;
+  margin: 6%;
+  color: #3498db;
+}
+
+.Product-outer-modal i{
+  font-weight: 10;
+  font-size: 2vw;
+  position: absolute!important;
+  top:-5%!important;
+  right:-2%!important;
+  border-radius: 100%;
+  background-color: white;
+  width: 3vw;
+  height: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

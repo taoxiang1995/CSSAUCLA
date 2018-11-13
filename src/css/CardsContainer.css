@@ -1,0 +1,37 @@
+.cardsContainer
+{
+  /*left: 5%;*/
+  /*margin-top: 10%;
+  padding-top: 130px;*/
+  padding-left: 4.5% !important;
+  position: relative;
+  top:50px;
+
+}
+
+.card-appear {
+  opacity: 0;
+}
+
+.card-appear.card-appear-active {
+  opacity: 1;
+  transition: opacity 1.5s ease;
+}
+
+.card-leave {
+  opacity: 1;
+}
+
+.card-leave.card-leave-active {
+  opacity: 0.01;
+  transition: opacity .3s ease-in;
+}
+
+.cards
+{
+  width: 20%;
+  margin-bottom: 4%;
+
+  border-radius: 8px;
+  background-color: rgba(239,239,239,0.1);
+}

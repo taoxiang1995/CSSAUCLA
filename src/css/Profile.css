@@ -1,0 +1,101 @@
+.profile-container{
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top:10px;
+}
+
+.profile-userInfo{
+  flex:70;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-userInfo-nameAndEmailAndIcon{
+  flex:50;
+  background-color: white;
+  padding-top: 3%;
+}
+
+.profile-userInfo-nameAndEmailAndIcon-name{
+  font-size: 7vh;
+  font-weight: bolder;
+  padding-left: 20%;
+  text-shadow: 5px 5px 6px #d3d3d3;
+}
+
+.profile-userInfo-nameAndEmailAndIcon-icons{
+  padding-left: 20%;
+}
+
+.profile-userInfo-nameAndEmailAndIcon-icons i{
+  padding-right: 5%;
+  color: grey;
+}
+
+.profile-userInfo-nameAndEmailAndIcon-icons i:hover{
+  color: black;
+  cursor: pointer;
+}
+
+.profile-userInfo-nameAndEmailAndIcon-email{
+  font-size: 3vh;
+  padding-left: 20%;
+  color:#c9c9c9;
+}
+
+.profile-userInfo-avatar{
+  flex:50;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.profile-userInfo-avatar-img{
+  border-radius: 100%;
+  margin-right:24%;
+  box-shadow: 0 0 10px grey;
+  width: 15vw;
+  height: 15vw;
+}
+
+.profile-userStats{
+  flex:30;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-userStats-section{
+  flex:25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color:#c9c9c9;
+}
+
+.profile-userStats-section-active{
+  color: black;
+}
+
+.profile-userStats-number:hover{
+  cursor: pointer;
+}
+
+.profile-userStats-description:hover{
+  cursor: pointer;
+}
+
+.profile-userStats-number{
+  font-size: 5vh;
+  font-weight: bolder;
+}
+
+.profile-userStats-description{
+  font-size: 2vh;
+  font-weight:normal;
+}

@@ -1,0 +1,32 @@
+/*.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500000ms ease-in;
+  -webkit-transform: opacity 500000ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 30000ms ease-in;
+  -webkit-transform: opacity 30000ms ease-in;
+}*/
+
+.MyClass{
+  width: 1000px !important;
+}
+
+.item{
+  border: black solid 2px;
+  width: 100px;
+  height: 100px;
+  background: red;
+  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s;
+}

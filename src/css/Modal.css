@@ -1,0 +1,41 @@
+.modal-background{
+  width: 100vw;
+  height:100vh;
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 10000000;
+  margin: 0px;
+  padding: 0px;
+}
+
+.modal-body{
+  /*padding: 0px;
+  display: none;*/
+}
+
+.modal-container{
+  width: 50vw;
+  height: 50vh;
+  background-color: white;
+  position: relative;
+}
+
+.close-icon{
+  color: white;
+  position: absolute;
+  display: block;
+}
+
+.modal-closeIcon{
+  position: absolute !important;
+  right: 5% !important;
+  top:2% !important;
+  color: #3498db;
+
+}
+
+.modal-closeIcon:hover{
+  cursor: pointer;
+}

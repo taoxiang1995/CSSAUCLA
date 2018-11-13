@@ -1,0 +1,26 @@
+.grid-item{
+  /*width: 100px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3%;*/
+  width: 22%;
+  height: 100%;
+  float: left;
+  background: #D26;
+
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3%;
+}
+
+
+.grid{
+/*
+  padding-left: 5%;
+  padding-right: 5%;*/
+  background: #EEE;
+  max-width: 1200px;
+  overflow: hidden;
+}
