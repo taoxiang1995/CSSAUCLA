@@ -42,7 +42,8 @@ class LandingPage extends Component {
       showSignInModal: false,
       showDetailModal: false,
       showProfile: false,
-      currentFilterId: 0
+      currentFilterId: 0,
+      showSubmitForm: false
     };
   }
 
@@ -55,15 +56,18 @@ class LandingPage extends Component {
   handleAddProductClick() {
     // browserHistory.push('/uploadproduct');
 
-    if (this.props.user.is_signed_in) {
-      this.setState({
-        showUploadProductModal: true
-      });
-    } else {
-      this.setState({
-        showSignUpModal: true
-      });
-    }
+    // if (this.props.user.is_signed_in) {
+    //   this.setState({
+    //     showUploadProductModal: true
+    //   });
+    // } else {
+    //   this.setState({
+    //     showSignUpModal: true
+    //   });
+    // }
+    this.setState({
+      showSubmitForm: true
+    });
   }
 
   shrinkBanner() {
@@ -230,6 +234,17 @@ class LandingPage extends Component {
           showModal={this.state.showSignInModal}
           className="signInModal"
         />
+        {this.state.showSubmitForm && (
+          <div className="landingPageSubmitForm">
+            <iframe src="https://xiangtao1995.wispform.com/f1424563" />
+            <i
+              onClick={() => {
+                this.setState({ showSubmitForm: false });
+              }}
+              className="closeButton fa fa-close"
+            />
+          </div>
+        )}
         {this.state.showUploadProductModal ? (
           <ReactCSSTransitionGroup
             transitionName="example"

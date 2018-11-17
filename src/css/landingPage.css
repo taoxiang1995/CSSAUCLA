@@ -7,26 +7,22 @@
   background-color: rgba(239,239,239,0.1);
 }*/
 
-body{
-
+body {
 }
 
-
-.headerAndProductBlur{
+.headerAndProductBlur {
   filter: blur(25px);
   transition: all 1s ease;
 }
 
-.headerAndProduct{
-
+.headerAndProduct {
 }
 
-
-.signInModal{
-  right: 3%!important;
+.signInModal {
+  right: 3% !important;
 }
 
-.moveDown{
+.moveDown {
   padding-top: 120px;
 }
 /*.card-appear {
@@ -48,7 +44,7 @@ body{
   opacity: 0;
 }*/
 
-.addProduct{
+.addProduct {
   border-radius: 100%;
   border-width: 0px !important;
   width: 50px;
@@ -57,34 +53,31 @@ body{
   justify-content: center;
   align-items: center;*/
   text-align: center;
-  margin-left: 91%;
   background-color: #3498db;
   color: white;
   position: fixed;
-  top:92%;
-  left:60px;
+  top: 92%;
+  right: 2%;
   transition: all 1s;
   opacity: 1;
   box-shadow: 2px 2px 8px grey;
 }
 
-
-button.addProduct:hover{
+button.addProduct:hover {
   background-color: #2980b9;
 }
 
-.collapse{
+.collapse {
   display: none;
 }
 
-
-.fixed{
+.fixed {
   position: fixed;
   width: 100%;
   z-index: 1000;
 }
 
-.shrink{
+.shrink {
   height: 70px;
   transition: height 1s;
   box-shadow: 0px 2px 20px grey;
@@ -92,7 +85,6 @@ button.addProduct:hover{
 
 .example-appear {
   opacity: 0;
-
 }
 
 .example-appear.example-appear-active {
@@ -110,17 +102,47 @@ button.addProduct:hover{
   transition: opacity 1s linear;
 }
 
-#Banner{
+#Banner {
   height: 20em;
 }
-@media only screen and (min-width: 1600px){
-  #Banner{
-  height: 25em;
-}
+@media only screen and (min-width: 1600px) {
+  #Banner {
+    height: 25em;
+  }
 }
 
-@media only screen and (max-width: 480px){
-  #Banner{
-  height: 10em;
+@media only screen and (max-width: 480px) {
+  #Banner {
+    height: 10em;
+  }
 }
+.landingPageSubmitForm {
+  top: 0px;
+  right: 0px;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100000;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landingPageSubmitForm iframe {
+  width: 90vw;
+  height: 90vh;
+  border: 0;
+}
+
+.landingPageSubmitForm .closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 35px;
+}
+
+.landingPageSubmitForm .closeButton:hover {
+  cursor: pointer;
 }
