@@ -15,29 +15,29 @@
 
 .search{
   height: 40px !important;
-  border: white solid 1.5px ;
+  border: white solid 1px ;
   background-color: transparent;
   /*margin-left: 5%;*/
   border-radius: 7px;
   /*margin-right: 50%;*/
   color: white;
   margin-left: 30px;
-  width:1100px;
+  width:100%;
 
 }
 
 .searchIcon-enter {
-  width: 0px;
+  width: 100%;
 }
 
 .searchIcon-enter.searchIcon-enter-active {
-  width:1100px;
+  width:100%;
   transition: width 0.5s ease;
 
 }
 
 .searchIcon-leave {
-  width: 1100px;
+  width: 100%;
 }
 
 .searchIcon-leave.searchIcon-leave-active {
@@ -45,3 +45,17 @@
   transition: width 0.5s linear;
 
 }
+
+@media only screen and (max-width: 1000px){
+  .fa-2x{
+  font-size: 1.5em !important;
+}
+.search{
+  height: 30px !important;
+}
+}
+
+.searchIconButton:focus {
+  outline: 0;
+}
+

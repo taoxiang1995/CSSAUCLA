@@ -109,3 +109,18 @@ button.addProduct:hover{
   opacity: 0.3;
   transition: opacity 1s linear;
 }
+
+#Banner{
+  height: 20em;
+}
+@media only screen and (min-width: 1600px){
+  #Banner{
+  height: 25em;
+}
+}
+
+@media only screen and (max-width: 480px){
+  #Banner{
+  height: 10em;
+}
+}

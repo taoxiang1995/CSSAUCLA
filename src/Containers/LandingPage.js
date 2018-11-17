@@ -252,7 +252,7 @@ class LandingPage extends Component {
               : " ")
           }
         >
-          <div className={this.state.shrinkBanner ? "fixed" : ""}>
+          <div id="Banner" className={this.state.shrinkBanner ? "fixed" : ""}>
             <Banner
               handleProfileButtonGoBackClick={this.handleProfileButtonGoBackClick.bind(
                 this
@@ -265,7 +265,7 @@ class LandingPage extends Component {
               is_signed_in={this.props.user.is_signed_in}
               onSignUpClick={this.onSignUpClick.bind(this)}
               titleName={
-                this.state.showProfile ? "My Stuff" : "UCLA Marketplace"
+                this.state.showProfile ? "My Stuff" : "UCLA留学生信息交换平台"
               }
               onSignInClick={this.onSignInClick.bind(this)}
               className={

@@ -18,28 +18,28 @@
   width: 60vw;
   position: absolute;
   left:20vw;
-  top:30vh;
+  top:20vh;
 }
 
 .product-modal-container{
   position: absolute;
-  top:8%;
-  width: 60vw;
-  height: 45vh;
+  top:3%;
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: white;
   border-radius: 7px;
 }
 
 .product-profile{
-  flex: 45;
+  
   display: flex;
   flex-direction: column;
 }
 
 .product-description{
-  flex:55;
+  
   display: flex;
   flex-direction: column;
 }
@@ -47,21 +47,20 @@
 .product-profile-picture{
   /*border: 1px black solid;*/
   flex:70;
+  height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-left: 8%;
   padding-right: 8%;
-  padding-bottom: 5%;
   overflow: hidden;
   overflow: hidden;
 }
 
 .product-profile-picture img{
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: auto;
   border-radius: 7px;
-  box-shadow: 5px 5px 5px grey;
 }
 
 .product-profile-user{
@@ -95,7 +94,7 @@
 }
 
 .product-description-title{
-  flex:15;
+  
   /*border: 1px solid black;*/
   display: flex;
   flex-direction: row;
@@ -105,18 +104,21 @@
 
 }
 
+
 .product-description-title-name{
   font-size: 26px;
+  margin-bottom: 0 !important;
 }
 
 .product-description-title-price{
   font-size: 26px;
+  color: black !important;
 }
 
 .product-description-detail{
   flex:53;
+  margin-top: 0px;
   /*border: 1px solid black;*/
-  overflow: scroll;
 }
 
 .product-description-buttons{
@@ -151,8 +153,9 @@
 }
 
 .product-description-detail p{
-  font-size: 20px;
-  margin: 6%;
+  font-size: 15px;
+  margin: 7%;
+  margin-top: 0;
   color: #3498db;
 }
 
@@ -169,4 +172,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .Product-outer-modal{
+    width: 80vw;
+    left: 10vw;
+  }
+  .product-profile-picture img {
+    width: 100%;
+  }
+  .product-description-title-name{
+  font-size: 16px;
+}
+
+.product-description-title-price{
+  font-size: 16px;
+}
+
+.product-description-detail{
+  font-size: 16px;
+}
 }

@@ -32,10 +32,17 @@
   position: absolute !important;
   right: 5% !important;
   top:2% !important;
-  color: #3498db;
+  color: rgb(111,42,37);
 
 }
 
 .modal-closeIcon:hover{
   cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  .modal-container{
+    height:70vh;
+    top: 15vh !important;
+  }
 }

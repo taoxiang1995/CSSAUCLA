@@ -56,7 +56,6 @@ class Banner extends Component {
   render() {
     return (
       <div className={this.props.className+ " bannerContainer " }>
-        <img className="backgroundImg" src="losangeles2.jpg" />
         <div className="buttons">
           {this.props.showProfile? <div><i onClick={this.props.handleProfileButtonGoBackClick} className="fa fa-arrow-circle-o-left fa-3x profile-goback" aria-hidden="true"></i></div> : <SearchIcon searchTerm={this.state.searchTerm} handleInputChange={this.handleInputChange.bind(this)} />}
           {this.renderButtonGroup()}

@@ -60,8 +60,15 @@ class CardsContainer extends Component {
     }
   }
 
+ 
   render() {
+        var masonryOptions = {
+          gutter: 10
+
+        }
+
     return (
+
         <Masonry
                   className={'my-gallery-class cardsContainer '+this.props.className}
                   id="suck"

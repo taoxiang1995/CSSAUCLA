@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import SignUpForm from './Components/Auth/SignUpForm';
 import SignInForm from './Components/Auth/SignInForm';
-import SignOutLink from './Components/Auth/SignOutLink';
 import LandingPage from './Containers/LandingPage';
 import UploadProduct from './Containers/uploadProduct';
 import { Router, Route, Link, browserHistory } from 'react-router'
@@ -39,8 +38,6 @@ class App extends Component {
         <Router history={browserHistory}>
             <Route path="/" component={LandingPage}/>
             <Route path="signin" component={SignInForm}/>
-            <Route path="signout" component={SignOutLink}/>
-            <Route path="signup" component={SignUpForm}/>
             <Route path="uploadproduct" component={UploadProduct}/>
         </Router>
       </Provider>
