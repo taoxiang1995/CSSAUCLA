@@ -17,4 +17,7 @@ signup: /signup
 upload product: /uploadproduct
 
 Workflow:
-signup -> uploadproduct -> landingPage 
+signup -> uploadproduct -> landingPage
+
+deploy:
+git push heroku master
